@@ -1,0 +1,93 @@
+{
+  "symptoms": [
+    { "id": 1, "name": "Fever" },
+    { "id": 2, "name": "Cough" },
+    { "id": 3, "name": "Headache" },
+    { "id": 4, "name": "Fatigue" },
+    { "id": 5, "name": "Sore Throat" },
+    { "id": 6, "name": "Runny Nose" },
+    { "id": 7, "name": "Nausea" },
+    { "id": 8, "name": "Sensitivity to Light" },
+    { "id": 9, "name": "Muscle Pain" }
+  ],
+
+  "conditions": [
+    {
+      "id": 1,
+      "name": "Flu",
+      "description": "Viral infection with systemic symptoms"
+    },
+    {
+      "id": 2,
+      "name": "Common Cold",
+      "description": "Mild upper respiratory viral illness"
+    },
+    {
+      "id": 3,
+      "name": "Migraine",
+      "description": "Neurological headache disorder"
+    },
+    {
+      "id": 4,
+      "name": "COVID-19",
+      "description": "Respiratory viral infection"
+    },
+    {
+      "id": 5,
+      "name": "Food Poisoning",
+      "description": "Gastrointestinal illness caused by contaminated food"
+    },
+    {
+      "id": 6,
+      "name": "Tension Headache",
+      "description": "Stress-related headache disorder"
+    },
+    {
+      "id": 7,
+      "name": "Sinusitis",
+      "description": "Inflammation of the sinuses"
+    }
+  ],
+
+  "weights": [
+    
+    { "symptomId": 1, "conditionId": 1, "weight": 0.7 },
+    { "symptomId": 2, "conditionId": 1, "weight": 0.5 },
+    { "symptomId": 4, "conditionId": 1, "weight": 0.6 },
+    { "symptomId": 9, "conditionId": 1, "weight": 0.6 },
+
+
+    { "symptomId": 5, "conditionId": 2, "weight": 0.6 },
+    { "symptomId": 6, "conditionId": 2, "weight": 0.7 },
+    { "symptomId": 2, "conditionId": 2, "weight": 0.5 },
+    { "symptomId": 4, "conditionId": 2, "weight": 0.4 },
+
+
+    { "symptomId": 3, "conditionId": 3, "weight": 0.6 },
+    { "symptomId": 7, "conditionId": 3, "weight": 0.4 },
+    { "symptomId": 8, "conditionId": 3, "weight": 0.8 },
+
+
+    { "symptomId": 1, "conditionId": 4, "weight": 0.6 },
+    { "symptomId": 2, "conditionId": 4, "weight": 0.6 },
+    { "symptomId": 4, "conditionId": 4, "weight": 0.7 },
+    { "symptomId": 9, "conditionId": 4, "weight": 0.5 },
+
+
+    { "symptomId": 7, "conditionId": 5, "weight": 0.8 },
+    { "symptomId": 4, "conditionId": 5, "weight": 0.5 },
+    { "symptomId": 1, "conditionId": 5, "weight": 0.3 },
+
+
+    { "symptomId": 3, "conditionId": 6, "weight": 0.7 },
+    { "symptomId": 4, "conditionId": 6, "weight": 0.5 },
+
+ 
+    { "symptomId": 3, "conditionId": 7, "weight": 0.6 },
+    { "symptomId": 5, "conditionId": 7, "weight": 0.5 },
+    { "symptomId": 6, "conditionId": 7, "weight": 0.7 }
+  ]
+}
+
+
+

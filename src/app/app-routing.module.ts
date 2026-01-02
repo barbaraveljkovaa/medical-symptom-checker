@@ -1,13 +1,9 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-export const routes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    loadComponent: () =>
-      import('./features/home/home.component').then(m => m.HomeComponent)
-  },
-  {
-    path: 'symptoms',
     loadChildren: () =>
       import('./features/symptoms/symptom.module').then(m => m.SymptomModule)
   },
@@ -22,3 +18,9 @@ export const routes: Routes = [
       import('./features/history/history.module').then(m => m.HistoryModule)
   }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
